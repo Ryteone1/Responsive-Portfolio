@@ -200,3 +200,18 @@ input[type=submit] {
   border: 0 none;
 }
 
+@media only screen and (max-width: 640px) {
+	nav {
+		clear: both;
+		width: 100%;
+		/*text-align: center;*/
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#name {
+		width: 100%;
+	}
+}
+
+
