@@ -132,7 +132,7 @@ h2 {
 
 .sidebar {
 	border: 1px solid #ddd; 
-	max-width: 270px;
+	width: 270px;
 	background: #fff;
 	float: right;
 	padding: 30px;
@@ -201,17 +201,48 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 640px) {
-	nav {
-		clear: both;
-		width: 100%;
-		/*text-align: center;*/
-		margin-left: auto;
-		margin-right: auto;
+	
+	#banner {
+		position: static;
 	}
 
 	#name {
 		width: 100%;
 	}
+
+	nav {
+		clear: both;
+		width: 100%;
+		text-align: center;
+		/*margin-left: auto;
+		margin-right: auto;*/
+	}
+
+	.auth-image {
+		width: 100%;
+		clear: both;	
+		height: auto;
+
+	}
+
+	.sidebar {
+		/*clear: both;*/
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
 }
 
+@media only screen and (max-width: 980px) {
+		
+	.auth-image {
+		width: 100%;
+		height: auto;
+	}
 
+		p {
+			clear: both;
+
+		}
+}
