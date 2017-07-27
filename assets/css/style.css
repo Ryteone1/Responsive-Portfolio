@@ -137,7 +137,6 @@ h2 {
 	float: right;
 	padding: 30px;
 	margin-bottom: 20px;
-	width: 100%;
 	padding-bottom: 20px;
 	line-height: 22px;
 	margin-bottom: 15px;
@@ -234,7 +233,7 @@ input[type=submit] {
 
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 980px) and (min-width: 768px) {
 		
 	.auth-image {
 		width: 100%;
@@ -243,6 +242,24 @@ input[type=submit] {
 
 		p {
 			clear: both;
-
 		}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.auth-image {
+		width: 50%;
+		height: auto;
+		float: left;
+	}
+
+	p {
+		float: right;
+	}
+
+	.sidebar {
+		clear: both;
+		width: 100%;
+		text-align: left;
+	}
 }
